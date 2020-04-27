@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {ImagenService} from './services/imagen.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,7 +21,7 @@ import { ImagenComponent } from './galeria/imagen.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ImagenService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
