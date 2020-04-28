@@ -1,6 +1,7 @@
+<unab-detalle-imagen [selectedImagen]="selectedImagen"></unab-detalle-imagen>
 <div class="container mt-3">
     <div class="row">
         <!-- <unab-imagen></unab-imagen> -->
         <!-- <unab-imagen  [imagen]="imagen"></unab-imagen> -->
-        <unab-imagen *ngFor="let imagen of imagenes" [imagen]="imagen"></unab-imagen>
+        <unab-imagen *ngFor="let imagen of imagenes" [imagen]="imagen" (click)="ngOnSelect(imagen)"></unab-imagen>
 </div>

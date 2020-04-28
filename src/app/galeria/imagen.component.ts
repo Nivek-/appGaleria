@@ -20,6 +20,7 @@ import { Imagen } from "../models/imagen";
 
       /* Cuando el raton se encuentre sobre el elemento se aplicará el siguiente estilo: */
       img:hover {
+        cursor: pointer;
         /* Añade un filtro en escala de grises*/
         -webkit-filter: grayscale(1);
         opacity: 1;
