@@ -3,5 +3,5 @@
     <div class="row">
         <!-- <unab-imagen></unab-imagen> -->
         <!-- <unab-imagen  [imagen]="imagen"></unab-imagen> -->
-        <unab-imagen *ngFor="let imagen of imagenes" [imagen]="imagen" (click)="ngOnSelect(imagen)"></unab-imagen>
+        <unab-imagen *ngFor="let imagen of imagenes | async" [imagen]="imagen" (click)="ngOnSelect(imagen)"></unab-imagen>
 </div>
