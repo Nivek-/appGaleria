@@ -1,7 +1,9 @@
 import { Component, OnInit, InputDecorator } from "@angular/core";
 import { Imagen } from "../models/imagen";
 import { ImagenService } from "../services/imagen.service";
-import {Observable} from 'rxjs/Observable';
+
+import { Observable } from 'rxjs';
+
 
 @Component({
   selector: "unab-lista-imagenes",

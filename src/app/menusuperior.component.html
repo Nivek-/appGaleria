@@ -20,6 +20,37 @@
       <li class="nav-item" routerLinkActive="">
         <a class="nav-link" [routerLink]="['/']">Inicio <span class="sr-only">(Actual)</span></a>
       </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Administrar usuarios
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="nav-link" [routerLink]="['/admin/usuarios']"> Todos los usuarios<span
+              class="sr-only">(Actual)</span></a>
+          <div class="dropdown-divider"></div>
+
+          <a class="nav-link" [routerLink]="['/admin/usuarios/crear']"> Nuevo Usuario<span
+              class="sr-only">(Actual)</span></a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Administrar imágenes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="nav-link" [routerLink]="['/admin/imagenes']"> Todas las imágenes<span
+              class="sr-only">(Actual)</span></a>
+          <div class="dropdown-divider"></div>
+
+          <a class="nav-link" [routerLink]="['/admin/imagenes/crear']"> Nueva Imágen<span
+              class="sr-only">(Actual)</span></a>
+        </div>
+      </li>
+
       <li class="nav-item" routerLinkActive="">
         <a class="nav-link" [routerLink]="['/contacto']">Contacto <span class="sr-only">(Actual)</span></a>
       </li>
